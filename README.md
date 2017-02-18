@@ -1,4 +1,5 @@
 # Keensole
+[![Browser Support Status](https://badges.herokuapp.com/browsers?googlechrome=%5E27&firefox=%5E31&iexplore=%5E9)](https://badges.herokuapp.com/browsers?googlechrome=%5E27&firefox=%5E31&iexplore=%5E9)
 
 One Paragraph of project description goes here
 
