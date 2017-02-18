@@ -1,6 +1,6 @@
 import { configs } from './configs/configs';
 
-let keensole = [],
+let keensole = {},
   style = [];
 
 // Build Color Related Methods
@@ -8,7 +8,7 @@ configs.colors.forEach(function (color) {
   // Build a new method with Color Name
   let method = () => {
     style.push(`color: ${color.code}`);
-    return this;
+    return keensole;
   };
   keensole[`${color.name}`] = method;
 });
@@ -19,7 +19,7 @@ configs.typography.forEach(function (typography) {
   let method = () => {
     style.push(`${typography.style}`);
     console.log(`${typography.style}`);
-    return this;
+    return keensole;
   };
   keensole[`${typography.name}`] = method;
 });
@@ -32,8 +32,8 @@ keensole.log = (message) => {
 
 keensole.underline();
 
-if (!window.keensole) {
-  window.keensole = keensole;
-}
+// if (!window.keensole) {
+//   window.keensole = keensole;
+// }
 
 export default keensole;
