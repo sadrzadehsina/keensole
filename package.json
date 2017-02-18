@@ -1,0 +1,31 @@
+{
+  "name": "keensole",
+  "version": "0.0.1",
+  "description": "console taken to another level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadrzadehsina/keensole.git"
+  },
+  "keywords": [
+    "console",
+    "devtools",
+    "browser"
+  ],
+  "authors": [
+    "Masoud Mirzaei <mamos98@gmail.com>",
+    "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sadrzadehsina/keensole/issues"
+  },
+  "homepage": "https://github.com/sadrzadehsina/keensole#readme",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "gulp": "^3.9.1"
+  }
+}
