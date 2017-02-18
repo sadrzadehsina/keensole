@@ -32,9 +32,8 @@ keensole.log = (message) => {
 
 keensole.underline();
 
-// Add keensole to window for global usage 😋
-// if (!window.keensole) {
-//   window.keensole = keensole;
-// }
+if (!window.keensole) {
+  window.keensole = keensole;
+}
 
 export default keensole;
