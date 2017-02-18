@@ -30,10 +30,10 @@ keensole.log = (message) => {
   style = [];
 };
 
-keensole.underline();
+// keensole.underline();
 
-// if (!window.keensole) {
-//   window.keensole = keensole;
-// }
+if (!window.keensole) {
+  window.keensole = keensole;
+}
 
 export default keensole;
