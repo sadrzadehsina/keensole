@@ -1,42 +1,40 @@
-let style = [];
+import { configs } from './configs/configs';
 
-let keensole = {
-  red() {
-    style.push(`color: red`);
+let keensole = [],
+  style = [];
+
+// Build Color Related Methods
+configs.colors.forEach(function (color) {
+  // Build a new method with Color Name
+  let method = () => {
+    style.push(`color: ${color.code}`);
     return this;
-  },
-  green() {
-    style.push(`color: green`);
+  };
+  keensole[`${color.name}`] = method;
+});
+
+// Build Typography Related Methods
+configs.typography.forEach(function (typography) {
+  // Build a new method with Color Name
+  let method = () => {
+    style.push(`${typography.style}`);
+    console.log(`${typography.style}`);
     return this;
-  },
-  blue() {
-    style.push(`color: blue`);
-    return this;
-  },
-  bold() {
-    style.push(`font-weight: bold`);
-    return this;
-  },
-  small() {
-    style.push(`font-size: 10px;`);
-    return this;
-  },
-  medium() {
-    style.push(`font-size: 14px;`);
-    return this;
-  },
-  large() {
-    style.push(`font-size: 20px;`);
-    return this;
-  },
-  log(message) {
-    console.log(`%c ` + message, style.join(`;`));
-    style = [];
-  }
+  };
+  keensole[`${typography.name}`] = method;
+});
+
+// Finally Log Message to Console 😊
+keensole.log = (message) => {
+  console.log(`%c ` + message, style.join(`;`));
+  style = [];
 };
 
-if (!window.keensole) {
-  window.keensole = keensole;
-}
+keensole.underline();
+
+// Add keensole to window for global usage 😋
+// if (!window.keensole) {
+//   window.keensole = keensole;
+// }
 
 export default keensole;
