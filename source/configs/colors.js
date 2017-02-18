@@ -2,26 +2,14 @@
 export let colors = [
   {
     name: 'red',
-    code: '#F40000'
+    code: '#EC407A'
   },
   {
     name: 'green',
-    code: '#44B51B'
+    code: '#66BB6A'
   },
   {
-    name: 'orange',
-    code: '#DD7D16'
-  },
-  {
-    name: 'purple',
-    code: '#45056E'
-  },
-  {
-    name: 'blue',
-    code: '#0E91F4'
-  },
-  {
-    name: 'purple',
-    code: '#45056E'
+    name: 'yellow',
+    code: '#FDD835'
   }
 ];

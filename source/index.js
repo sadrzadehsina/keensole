@@ -3,9 +3,18 @@ import { configs } from './configs/configs';
 let keensole = {},
   style = [];
 
+// Build Themes
+configs.themes.forEach(function ( theme ) {
+  let method = () => {
+    style.push(`background-color: ${theme.backgroundColor}; color: ${theme.color}`);
+    return keensole;
+  };
+  keensole[`${theme.name}`] = method;
+});
+
 // Build Color Related Methods
 configs.colors.forEach(function (color) {
-  // Build a new method with Color Name
+  // Build a new method with a color
   let method = () => {
     style.push(`color: ${color.code}`);
     return keensole;
@@ -15,10 +24,9 @@ configs.colors.forEach(function (color) {
 
 // Build Typography Related Methods
 configs.typography.forEach(function (typography) {
-  // Build a new method with Color Name
+  // Build a new method with a typography
   let method = () => {
     style.push(`${typography.style}`);
-    console.log(`${typography.style}`);
     return keensole;
   };
   keensole[`${typography.name}`] = method;
@@ -26,11 +34,9 @@ configs.typography.forEach(function (typography) {
 
 // Finally Log Message to Console 😊
 keensole.log = (message) => {
-  console.log(`%c ` + message, style.join(`;`));
+  console.log(`%c` + message, style.join(`;`));
   style = [];
 };
-
-// keensole.underline();
 
 if (!window.keensole) {
   window.keensole = keensole;
