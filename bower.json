@@ -1,7 +1,7 @@
 {
   "name": "keensole",
   "description": "console taken to another level",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "authors": [
     "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>",
