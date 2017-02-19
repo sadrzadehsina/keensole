@@ -2,9 +2,11 @@
 import {colors} from './colors';
 import {typography} from './typography';
 import {themes} from './themes';
+import {functions} from './functions';
 
 export let configs = {
   colors: colors,
   typography: typography,
-  themes: themes
+  themes: themes,
+  functions: functions
 };

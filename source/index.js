@@ -1,7 +1,8 @@
 import { configs } from './configs/configs';
 
 let keensole = {},
-  style = [];
+  style = [],
+  fns = [];
 
 // Build Themes
 configs.themes.forEach(function ( theme ) {
@@ -9,7 +10,15 @@ configs.themes.forEach(function ( theme ) {
     style.push(`background-color: ${theme.backgroundColor}; color: ${theme.color}`);
     return keensole;
   };
-  keensole[`${theme.name}`] = method;
+  keensole[theme.name] = method;
+});
+
+configs.functions.forEach(function ( fn ) {
+  let method = () => {
+    fns.push(fn.fn);
+    return keensole;
+  };
+  keensole[fn.name] = method;
 });
 
 // Build Color Related Methods
@@ -19,7 +28,7 @@ configs.colors.forEach(function (color) {
     style.push(`color: ${color.code}`);
     return keensole;
   };
-  keensole[`${color.name}`] = method;
+  keensole[color.name] = method;
 });
 
 // Build Typography Related Methods
@@ -29,13 +38,18 @@ configs.typography.forEach(function (typography) {
     style.push(`${typography.style}`);
     return keensole;
   };
-  keensole[`${typography.name}`] = method;
+  keensole[typography.name] = method;
 });
 
 // Finally Log Message to Console 😊
 keensole.log = (message) => {
-  console.log(`%c` + message, style.join(`;`));
+  var msg = message;
+  fns.forEach(function( fn ) {
+    msg = fn(msg);
+  });
+  console.log(`%c` + msg, style.join(`;`));
   style = [];
+  fns = [];
 };
 
 if (!window.keensole) {

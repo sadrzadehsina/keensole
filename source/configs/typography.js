@@ -11,5 +11,17 @@ export let typography = [
   {
     name: 'overline',
     style: 'text-decoration: overline'
+  },
+  {
+    name: 'small',
+    style: 'font-size: 10px'
+  },
+  {
+    name: 'medium',
+    style: 'font-size: 14px'
+  },
+  {
+    name: 'large',
+    style: 'font-size: 18px'
   }
 ];

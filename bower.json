@@ -1,0 +1,24 @@
+{
+  "name": "keensole",
+  "description": "console taken to another level",
+  "version": "0.0.2",
+  "main": "index.js",
+  "authors": [
+    "Sina Sadrzadeh <sadrzadeh.sinaa@gmail.com>",
+    "Masoud Mirzaei <mamos98@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "console",
+    "devtools",
+    "browser"
+  ],
+  "homepage": "https://github.com/sadrzadehsina/keensole",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
