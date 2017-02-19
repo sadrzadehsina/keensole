@@ -1,6 +1,6 @@
 {
   "name": "keensole",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "console taken to another level",
   "main": "index.js",
   "scripts": {
