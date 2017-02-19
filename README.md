@@ -20,20 +20,20 @@ Give examples
 You can install this package either with `npm` or with `bower`.
 
 #### npm
-```
+```bash
 npm install keensole --save
 ```
 Then add a `<script>` to your index.html:
-```
+```html
 <script src="/node_modules/keensole/dist/keensole.js"></script>
 ```
 
 #### bower
-```
+```bash
 bower install keensole --save
 ```
 Then add a `<script>` to your index.html:
-```
+```html
 <script src="/bower_components/keensole/dist/keensole.js"></script>
 ```
 
