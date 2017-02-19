@@ -37,20 +37,6 @@ Then add a `<script>` to your index.html:
 <script src="/bower_components/keensole/dist/keensole.js"></script>
 ```
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
 ## Running the tests
 
 Explain how to run the automated tests for this system
