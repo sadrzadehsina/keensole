@@ -1,37 +1,37 @@
 # Keensole
 [![Browser Support Status](https://badges.herokuapp.com/browsers?googlechrome=%5E27&firefox=%5E31&iexplore=%5E9)](https://badges.herokuapp.com/browsers?googlechrome=%5E27&firefox=%5E31&iexplore=%5E9)
 
-One Paragraph of project description goes here
+It does a very simple thing, extends `console.log` functionality in a funny way. It adds a few helper functions to make your message interesting!
 
-## Getting Started
+## Let's see how
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+It is a dependency free library. It means you don't need to include libraries like `jquery` or `underscore` to make it work. But we don't promise that it continues like this :D
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+You can install this package either with `npm` or with `bower`.
 
-Say what the step will be
-
+#### npm
+```bash
+npm install keensole --save
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+Then add a `<script>` to your index.html:
+```html
+<script src="/node_modules/keensole/dist/keensole.js"></script>
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+#### bower
+```bash
+bower install keensole --save
+```
+Then add a `<script>` to your index.html:
+```html
+<script src="/bower_components/keensole/dist/keensole.js"></script>
+```
 
 ## Running the tests
 
