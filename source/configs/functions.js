@@ -2,19 +2,19 @@
 export const functions = [
   {
     name: 'reverse',
-    fn: function( string ) {
+    fn: ( string ) => {
       return string.split('').reverse().join('');
     }
   },
   {
     name: 'lower',
-    fn: function( string ) {
+    fn: ( string ) => {
       return string.toLowerCase();
     }
   },
   {
     name: 'upper',
-    fn: function( string ) {
+    fn: ( string ) => {
       return string.toUpperCase();
     }
   }
