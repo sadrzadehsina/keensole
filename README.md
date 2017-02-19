@@ -17,7 +17,25 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+You can install this package either with `npm` or with `bower`.
+
+#### npm
+```
+npm install keensole --save
+```
+Then add a `<script>` to your index.html:
+```
+<script src="/node_modules/keensole/dist/keensole.js"></script>
+```
+
+#### bower
+```
+bower install keensole --save
+```
+Then add a `<script>` to your index.html:
+```
+<script src="/bower_components/keensole/dist/keensole.js"></script>
+```
 
 Say what the step will be
 
