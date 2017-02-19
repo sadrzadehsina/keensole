@@ -1,5 +1,5 @@
 // Themes List
-export let themes = [
+export const themes = [
   {
     name: 'error',
     backgroundColor: '#EC407A',

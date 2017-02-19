@@ -1,5 +1,5 @@
 // Colors List
-export let colors = [
+export const colors = [
   {
     name: 'red',
     code: '#EC407A'

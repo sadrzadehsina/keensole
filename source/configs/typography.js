@@ -1,5 +1,5 @@
 // typography List
-export let typography = [
+export const typography = [
   {
     name: 'underline',
     style: 'text-decoration: underline'
@@ -23,5 +23,13 @@ export let typography = [
   {
     name: 'large',
     style: 'font-size: 18px'
+  },
+  {
+    name: 'bold',
+    style: 'font-weight: bold'
+  },
+  {
+    name: 'italic',
+    style: 'font-style: italic'
   }
 ];

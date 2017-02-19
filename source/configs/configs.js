@@ -4,7 +4,7 @@ import {typography} from './typography';
 import {themes} from './themes';
 import {functions} from './functions';
 
-export let configs = {
+export const configs = {
   colors: colors,
   typography: typography,
   themes: themes,

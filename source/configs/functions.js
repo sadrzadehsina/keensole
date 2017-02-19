@@ -1,5 +1,5 @@
 // typography List
-export let functions = [
+export const functions = [
   {
     name: 'reverse',
     fn: function( string ) {
