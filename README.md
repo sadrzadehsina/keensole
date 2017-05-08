@@ -21,7 +21,7 @@ keensole.success().upper().log('Great, it works like a charm!');
 
 You see, you should start with `keensole` and end with `log` with a message as the parameter passed to it. Between these, you are free to use as many helper function as required.
 
-For a list of available functions see [the table below]()
+For a list of available functions see [the table below](https://github.com/neacodin/keensole#available-helper-functions)
 
 ### Prerequisites
 
