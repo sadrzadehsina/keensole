@@ -49,6 +49,48 @@ Then add a `<script>` to your index.html:
 <script src="/bower_components/keensole/dist/keensole.js"></script>
 ```
 
+## Available Helper Functions
+
+Available functions are splited into **four** different categories.
+
+#### Colors
+
+| Name   | Function |
+| ------ | -------- |
+| red    | Changes the text color to red    |
+| green  | Changes the text color to green  |
+| yellow | Changes the text color to yellow |
+
+#### Themes
+
+| Name     | Function |
+| ------   | -------- |
+| error    | An error theme with a white foreground color and a red background color      |
+| success  | A success theme with a white foreground color and a green background color   |
+| warning  | A warning theme with a black foreground color and an orange background color |
+| info     | An info theme with a black foreground color and a gray background color      |
+
+#### Typography
+
+| Name        | Function |
+| ------      | -------- |
+| underline   | Underlines the message |
+| lineThrough | Adds a line throughout the given message |
+| overline    | Overlines the message |
+| small       | Changes font size of the given message to small which is 10px |
+| medium      | Changes font size of the given message to medium which is 14px |
+| large       | Changes font size of the given message to medium which is 18px |
+| bold        | Makes the given message bold |
+| italic      | Makes the given message italic |
+
+#### Functions
+
+| Name      | Function |
+| ------    | -------- |
+| reverse   | Reverses the given message |
+| lower     | Makes all letters of a message lower case |
+| upper     | Makes all letters of a message upper case |
+
 ## Contributing
 
 We really appreciate any contributation to make it more useful. As a collaborator once you clone the repository you need to run `npm install` to install required development dependencies.
