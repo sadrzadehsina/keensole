@@ -7,11 +7,25 @@ It does a very simple thing, extends `console.log` functionality in a funny way.
 
 ## Let's see how
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+It follows a very simple instruction. Just chain as many functions as you need to get to your desire output. For instance if I want to show there is something wrong in a piece of code I will follow below command.
+
+```javascript
+keensole.error().log('Oops, something went wrong!');
+```
+
+Or in case of showing a successful message in upper case, following command is a choice.
+
+```javascript
+keensole.success().upper().log('Great, it works like a charm!');
+```
+
+You see, you should start with `keensole` and end with `log` with a message as the parameter passed to it. Between these, you are free to use as many helper function as required.
+
+For a list of available functions see [the table below]()
 
 ### Prerequisites
 
-It is a dependency free library. It means you don't need to include libraries like `jquery` or `underscore` to make it work. But we don't promise that it continues like this :D
+It is a dependency free library. It means you don't need to include libraries like `jquery` or `underscore` to make it work. But we don't promise that it continues like this 😄
 
 ### Installing
 
@@ -35,37 +49,15 @@ Then add a `<script>` to your index.html:
 <script src="/bower_components/keensole/dist/keensole.js"></script>
 ```
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+We really appreciate any contributation to make it more useful. As a collaborator once you clone the repository you need to run `npm install` to install required development dependencies.
+
+Since we are using EcmaScript 6 (the great ES6😍), we use `babel` to translate it to ES5. So you need to run a very simple gulp task called `build` each time you change the source and you want to see your changes. Just run `gulp build`.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/neacodin/keensole/tags). 
 
 ## Authors
 
@@ -77,10 +69,4 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+This project is licensed under the Apache License 2.0 - see the [LICENSE.md](LICENSE.md) file for details
